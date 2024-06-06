@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Subcultures</title>
+  <link rel="icon" href="хз.jpg">
+  <link rel="apple-touch-icon-precomposed" href="хз.jpg">
+  <link rel="stylesheet" href="one.css">
+  <link rel="stylesheet" href="five.css">
+</head> 
+<body> 
+  
+  <header class="header">
+    <div>
+        <button class="dark">темы</button>
+        <a href="file:///C:/Users/zveni/Downloads/tresh/two.html" class="button">ОПИСАНИЕ</a>
+        <a href="file:///C:/Users/zveni/Downloads/tresh/three.html" class="button">ТЕСТ</a>
+        <a href="file:///C:/Users/zveni/Downloads/tresh/index.html" class="button">ГЛАВНАЯ</a>
+        <a href="file:///C:/Users/zveni/Downloads/tresh/four.html" class="button">ДЛЯ РОДИТЕЛЕЙ</a>
+        <a href="file:///C:/Users/zveni/Downloads/tresh/six.html" class="button">МЕМ</a>
+    </div>
+</header>
+<script src="one.js"></script>
+
+<div class="container">
+    <div class="block">
+        <div id="BLOCK">
+            <div id="BLOCK_TWO"></div>
+        </div>
+        <img id="img" src="мем.jpg" style="display: none;" />
+
+        <div id="paste">АНЕКДОТ</div>
+
+        <div id="del">УДАЛИТЬ АНЕКДОТЫ</div>
+    </div>
+</div>
+
+<script> 
+
+  let n = document.getElementById('paste');
+  let block = document.getElementById('BLOCK_TWO');
+  let r = document.getElementById('del');
+  
+  let array = ["Решил хиппи покончить жизнь самоубийством, перерезав себе вены. Час режет, два режет, а фенечки все не кончаются...", "Было у отца три сына: два умных, а третий басист...", "Идут как-то два дед инсайда по улице, у одного ногти черные, а у другого тоже матери нет...", "Емо плачат одним глазом, чтоб не намочить челку...", "Анекдоты закончились"];
+  let i = 0;
+  let j = 1;
+  
+  n.onclick = function f_one() {
+    for ( ; i < j && i < array.length; i++) {
+      block.innerHTML += array[i] + "<p />";
+    };
+    j++;
+    
+  }
+  
+  r.onclick = function f_two() {
+  var p = document.getElementById("BLOCK");
+  var c = document.getElementById("BLOCK_TWO");
+  p.removeChild(c);
+  document.getElementById("img").style.display = "";
+  }
+  
+  
+      
+  </script> 
+    
+
+
+
+</body> 

@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background: #ffeefd;
+  color: #000000;
+  text-align: left;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 350px 550px 450px;
+  grid-template-rows: 50px 250px 300px 350px;
+  gap: 5px 20px;
+  grid-template-areas:
+      ". . ."
+      "область-1 область-1 область-1"
+      "область-2 область-3 область-3"
+      "область-2 облость-4 облость-5";
+}
+.область-1 {
+  grid-area: область-1;
+  background: #b1b4f5;
+  padding: 10px;
+  border: 10px solid rgba(19, 23, 239, 0.5);
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 80px;
+  opacity: 0.7;
+  text-align: left;
+}
+.область-2 {
+  grid-area: область-2;
+  background: #bafac8;
+  border-radius: 150px 10px;
+  border: 10px solid rgba(92, 201, 97, 0.5);
+  opacity: 0.7;
+  padding: 10px;
+  text-align: right;
+}
+.область-3 {
+  grid-area: область-3;
+  background: #fdf6bb;
+  border-radius: 20px 20px 150px 150px;
+  border: 10px solid rgba(204, 185, 102, 0.5);
+  opacity: 0.7;
+  padding: 10px;
+  text-align: left;
+}
+.облость-4 {
+  grid-area: облость-4;
+  background: #f3bbbb;
+  border-radius: 40px 20px 180px;
+  border: 10px solid rgba(214, 106, 106, 0.5);
+  opacity: 0.7;
+  padding: 10px;
+  text-align: left;
+}
+.облость-5 {
+  grid-area: облость-5;
+  background: #a6fbeb;
+  border-radius: 180px 20px 40px;
+  border: 10px solid rgba(88, 245, 177, 0.5);
+  opacity: 0.7;
+  padding: 10px;
+  text-align: right;
+}
+article {
+  top: 100px;
+  margin-top: 100px;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 100px auto;
+}
+.text {
+  font-size: 16px;
+  font-family: FreeMono, monospace;
+  text-align: left;
+}
+body.dark {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background: #baacb8;
+  color: #000000;
+  text-align: left;
+}
+
+body.dark .область-1 {
+  grid-area: область-1;
+  background: #8e90bd;
+  padding: 10px;
+  border: 10px solid rgba(9, 12, 149, 0.5);
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 80px;
+  opacity: 0.7;
+}
+
+body.dark .область-2 {
+  grid-area: область-2;
+  background: #8bb694;
+  border-radius: 150px 10px;
+  border: 10px solid rgba(73, 156, 77, 0.5);
+  opacity: 0.7;
+  padding: 10px;
+}
+
+body.dark .область-3 {
+  grid-area: область-3;
+  background: #c9c494;
+  border-radius: 20px 20px 150px 150px;
+  border: 10px solid rgba(145, 132, 73, 0.5);
+  opacity: 0.7;
+  padding: 10px;
+}
+
+body.dark .область-4 {
+  grid-area: облость-4;
+  background: #bc8f8f;
+  border-radius: 40px 20px 180px;
+  border: 10px solid rgba(157, 80, 80, 0.5);
+  opacity: 0.7;
+  padding: 10px;
+}
+
+body.dark .область-5 {
+  grid-area: облость-5;
+  background: #7db2a8;
+  border-radius: 180px 20px 40px;
+  border: 10px solid rgba(50, 157, 111, 0.5);
+  opacity: 0.7;
+  padding: 10px;
+}
+
+.ul {
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+}
