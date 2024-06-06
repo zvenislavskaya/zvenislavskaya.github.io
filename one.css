@@ -42,7 +42,7 @@ body.dark header {
   opacity: 0.75;
   border: 3px solid rgba(156, 2, 92, 0.5);
 }
-.dark {
+.dark_k {
   position: relative;
   border: 3px solid rgba(91, 83, 240, 0.5);
   overflow: hidden;
